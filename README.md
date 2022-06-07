@@ -1,10 +1,34 @@
 # MovieLens 离线数仓搭建
 
 > Author: json.wong.work@gmail.com
->
-> Index: https://github.com/
+> Index: https://github.com/jsonww/ml-dw
 
-[TOC]
+- [MovieLens 离线数仓搭建](#movielens-离线数仓搭建)
+  - [数据准备](#数据准备)
+    - [数据源](#数据源)
+    - [数据解释](#数据解释)
+    - [项目环境](#项目环境)
+    - [数据获取](#数据获取)
+  - [数仓建模](#数仓建模)
+    - [主题域划分](#主题域划分)
+    - [ODS 层](#ods-层)
+    - [DWD 层 / DIM 层](#dwd-层--dim-层)
+    - [DWS 层 / DWT 层](#dws-层--dwt-层)
+    - [ADS 层](#ads-层)
+  - [数仓搭建](#数仓搭建)
+    - [命名规范](#命名规范)
+    - [ODS 层](#ods-层-1)
+    - [DIM 层](#dim-层)
+    - [DWD 层](#dwd-层)
+    - [DWS 层](#dws-层)
+    - [DWT 层](#dwt-层)
+    - [ADS 层](#ads-层-1)
+    - [分层结果](#分层结果)
+      - [数据地图](#数据地图)
+      - [分层效果指标衡量](#分层效果指标衡量)
+  - [数据仪表板](#数据仪表板)
+    - [通过 sqoop 导入 MySQL](#通过-sqoop-导入-mysql)
+    - [Superset 搭建数据仪表板](#superset-搭建数据仪表板)
 
 ## 数据准备
 
@@ -103,7 +127,7 @@ DWD 层和 DIM 层分别抽取数据文件中的具体业务过程和可单独�
 
 绘制总线矩阵如下：
 
-![总线矩阵](C:\Users\jacks\Desktop\MovieLens离线数仓\总线矩阵.png)
+![总线矩阵](总线矩阵.png)
 
 
 
@@ -1149,13 +1173,13 @@ DWD 层和 DIM 层分别抽取数据文件中的具体业务过程和可单独�
 
 #### 数据地图
 
-![ml数据地图](C:\Users\jacks\Desktop\MovieLens离线数仓\数据地图.png)
+![ml数据地图](数据地图.png)
 
 
 
 #### 分层效果指标衡量
 
-<img src="C:\Users\jacks\Desktop\MovieLens离线数仓\分层效果衡量指标.png" alt="MovieLens 离线数仓分层效果衡量指标" style="zoom:80%;" />
+![分层效果衡量指标](分层效果衡量指标.png)
 
 
 
@@ -1289,5 +1313,5 @@ DWD 层和 DIM 层分别抽取数据文件中的具体业务过程和可单独�
 - 电影
 - 用户
 
-![数据仪表板](C:\Users\jacks\Desktop\MovieLens离线数仓\数据仪表板.jpg)
+![数据仪表板](数据仪表板.jpg)
 
